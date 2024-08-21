@@ -115,113 +115,122 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Data Lakehouse"
-    subtitle="O Data Lakehouse é uma abordagem moderna para a gestão de dados que combina as melhores características dos Data Lakes e Data Warehouses. Combinando a escalabilidade e flexibilidade dos Data Lakes com a estrutura e governança dos Data Warehouses, o Data Lakehouse é a solução ideal para empresas que buscam extrair valor de grandes volumes de dados."
-    tagline="Um Novo Nível de Gestão de Dados"
+  title="Data Lakehouse"
+  subtitle="O Data Lakehouse é uma solução moderna que une o melhor dos Data Lakes e Data Warehouses, oferecendo escalabilidade e flexibilidade na gestão de dados, aliada à governança e estrutura necessárias para garantir a qualidade das informações. Ideal para empresas que querem transformar grandes volumes de dados em insights valiosos, essa abordagem é essencial para quem deseja estar na vanguarda da análise de dados."
+  tagline="Um Novo Nível de Gestão de Dados"
 
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
+  items={[
+    {
+      title: 'Deltalake',
+      description: "Garanta consistência, confiabilidade e performance na manipulação de grandes volumes de dados com o Deltalake, uma tecnologia de ponta que une a simplicidade dos Data Lakes com a integridade transacional dos Data Warehouses.",
+      icon: 'flat-color-icons:database',
+    },
+    {
+      title: 'Unity Catalog',
+      description:
+        "Administre permissões, políticas de segurança e governança de dados de forma centralizada com o Unity Catalog. Perfeito para garantir que seus dados estejam sempre seguros e acessíveis apenas a quem deve.",
+      icon: 'flat-color-icons:database',
+    },
+    {
+      title: 'DataLineage',
+      description:
+        'Acompanhe o ciclo de vida completo dos seus dados com o DataLineage, permitindo rastrear a origem e o destino das informações, garantindo precisão e conformidade em todos os níveis de análise.',
+      icon: 'flat-color-icons:database',
+    },
+    {
+      title: 'DuckDB',
+      description:
+        "Execute consultas analíticas rápidas e eficientes com o DuckDB, uma solução moderna e leve que permite trabalhar diretamente sobre arquivos de dados sem complicações ou a necessidade de integrações complexas.",
+      icon: 'flat-color-icons:database',
+    },
+    {
+      title: 'Apache Spark',
+      description:
+        'Escalabilidade e performance em análise de dados com o Apache Spark, uma tecnologia poderosa que permite o processamento de grandes volumes de dados de maneira distribuída e eficiente, acelerando suas análises e decisões estratégicas.',
+      icon: 'flat-color-icons:database',
+    },
+    {
+      title: 'Machine Learning com MLFlow',
+      description:
+        'Aprimore seus dados com inteligência artificial. O MLFlow permite criar, gerenciar e implantar modelos de Machine Learning facilmente, automatizando processos e impulsionando decisões preditivas.',
+      icon: 'flat-color-icons:database',
+    },
+    {
+      title: 'Data Marts',
+      description:
+        'Crie Data Marts personalizados e otimizados para gerar insights direcionados para o seu negócio. Ferramentas poderosas para a criação de relatórios e análises que impulsionam decisões estratégicas.',
+      icon: 'flat-color-icons:database',
+    },
+    {
+      title: 'Governança de Dados',
+      description:
+        'Tenha controle total sobre quem acessa e modifica seus dados, assegurando conformidade com regulamentações e mantendo a integridade das suas informações em toda a cadeia.',
+      icon: 'flat-color-icons:database',
+    },
+    {
+      title: 'Integração Completa',
+      description: "Conecte todas as suas fontes de dados em um único ambiente robusto e seguro, facilitando o fluxo e a integração de informações para gerar valor em todos os níveis da sua empresa.",
+      icon: 'flat-color-icons:database',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features2>
+
 
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
-    items={[
-      {
-        title: 'Why AstroWind?',
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
-      {
-        title: 'What do I need to start?',
-        description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
-      },
-      {
-        title: 'How to install the Astro + Tailwind CSS template?',
-        description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  />
+  title="Perguntas Frequentes"
+  subtitle="Encontre respostas para dúvidas comuns sobre como a Detakai pode ajudar a transformar o gerenciamento de dados da sua empresa, usando tecnologias de ponta e práticas de governança avançadas."
+  tagline="FAQs"
+  classes={{ container: 'max-w-6xl' }}
+  items={[
+    {
+      title: 'Por que a Detakai?',
+      description:
+        "A Detakai é especializada em fornecer soluções completas de dados para empresas que querem maximizar o valor de suas informações. Combinamos tecnologias como Databricks, Deltalake, e MLFlow para garantir uma gestão eficiente, segura e escalável dos seus dados, permitindo que você tome decisões informadas e estratégicas.",
+    },
+    {
+      title: 'O que é um Data Lakehouse e por que eu preciso dele?',
+      description:
+        "O Data Lakehouse combina a flexibilidade dos Data Lakes com a governança e performance dos Data Warehouses, permitindo que sua empresa armazene, gerencie e analise grandes volumes de dados de maneira integrada. Essa solução é ideal para empresas que precisam de agilidade, segurança e insights baseados em dados em tempo real.",
+    },
+    {
+      title: 'Como a Detakai pode melhorar meu processo de tomada de decisão?',
+      description:
+        "Nós estruturamos ambientes de Data Marts personalizados e implementamos ferramentas de Business Intelligence que permitem análises profundas e relatórios precisos. Isso transforma seus dados em informações acionáveis, auxiliando na definição de estratégias de negócio mais assertivas.",
+    },
+    {
+      title: 'Quais benefícios o MLFlow traz para minha empresa?',
+      description:
+        "O MLFlow facilita a criação, monitoramento e implantação de modelos de Machine Learning. Ele permite automatizar processos complexos e aproveitar o poder da inteligência artificial para antecipar tendências, otimizar operações e melhorar o atendimento ao cliente, tornando sua empresa mais competitiva.",
+    },
+    {
+      title: 'Como a Detakai garante a segurança dos meus dados?',
+      description:
+        "Com o Unity Catalog e outras soluções avançadas de governança de dados, nós garantimos que todos os acessos aos dados sejam controlados, rastreados e seguros. Implementamos políticas de segurança rigorosas para proteger suas informações e garantir conformidade com regulamentações de mercado.",
+    },
+    {
+      title: 'Minha empresa já tem um Data Warehouse. Por que migrar para um Data Lakehouse?',
+      description:
+        "O Data Lakehouse oferece mais flexibilidade ao integrar dados estruturados e não estruturados, com um custo-benefício superior e performance aprimorada. Além disso, proporciona mais eficiência ao eliminar a necessidade de ambientes de armazenamento separados, consolidando tudo em uma única plataforma otimizada.",
+    },
+    {
+      title: 'Quanto tempo leva para implementar as soluções da Detakai?',
+      description:
+        "O tempo de implementação varia conforme o tamanho e as necessidades específicas da sua empresa. Nossa equipe trabalha com eficiência para garantir uma transição tranquila e rápida, sem comprometer a qualidade ou a segurança do processo.",
+    },
+  ]}
+/>
+
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+<!--   <Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
@@ -229,7 +238,7 @@ const metadata = {
       { title: 'Users', amount: '48.4K' },
     ]}
   />
-
+ -->
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
