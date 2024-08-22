@@ -11,9 +11,16 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import image from '~/assets/images/deep.jpg';
 import myImage from '~/assets/images/deep.jpg';
 import Image from 'astro/components/Image.astro';
+
+
+import {
+  BackgroundImage,
+  ImageSupportDetection,
+} from "astro-imagetools/components/components";
+
+const content = await fetch(import.meta.env.CONTENT_URL).then((r) => r.text());
 
 const metadata = {
   title: 'Detakai - Data Lakehouse - Um Novo Nível de Gestão de Dados.',
