@@ -11,13 +11,15 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import image from '~/assets/images/deep.jpg';
+import myImage from '~/assets/images/deep.jpg';
+import Image from 'astro/components/Image.astro';
 
 const metadata = {
   title: 'Detakai - Data Lakehouse - Um Novo Nível de Gestão de Dados.',
   ignoreTitleTemplate: true,
 };
 ---
-
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <div class="flex items-center justify-center w-full h-screen" style="background-image: url('/src/assets/images/deep.jpg'); background-size: cover; background-position: center;">
@@ -35,12 +37,17 @@ const metadata = {
     >
     
     <!-- image -->
-     
+     <Fragment slot="title" >
+        <div class="mg-5 flex items-center justify-center pt-1">
+          <span>データ海</span>
+          </div>
+      </Fragment>
       <Fragment slot="title">
        <!--  <div class="flex items-center justify-center ">
           <Image  class="flex items-center justify-center " width="320"
             src={myImage} alt="A description of my image." />
          </div> -->
+         
         Mergulhe no futuro dos grandes volumes de dados com a Detakai.
         
       </Fragment>
@@ -71,13 +78,13 @@ const metadata = {
       {
         title: 'Deltalake',
         description:
-          'Otimize a gestão de dados transacionais e garanta consistência',
+          'Otimize a gestão de dados transacionais e garanta consistência.',
         icon: 'tabler:brand-tailwind',
       },
       {
         title: 'Unity Catalog',
         description:
-          ' Controle o acesso e a governança de dados em um só lugar',
+          ' Controle o acesso e a governança de dados em um só lugar.',
         icon: 'tabler:components',
       },
       {
@@ -87,9 +94,9 @@ const metadata = {
         icon: 'tabler:list-check',
       },
       {
-        title: 'DuckDB',
+        title: 'Workflows',
         description:
-          'Uma solução rápida e moderna para consultas analíticas.',
+          'Automatize e otimize a precisão na movimentação e transformação de dados..',
         icon: 'tabler:rocket',
       },
       {
