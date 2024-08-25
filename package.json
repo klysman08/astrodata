@@ -30,6 +30,7 @@
     "lodash.merge": "^4.6.2",
     "lottie-web": "^5.12.2",
     "react-lottie": "^1.2.4",
+    "tippy.js": "^6.3.7",
     "unpic": "^3.18.0"
   },
   "devDependencies": {
