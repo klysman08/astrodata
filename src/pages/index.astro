@@ -7,18 +7,19 @@ import Features2 from '~/components/widgets/Features2.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
-
-
-
 const metadata = {
   title: 'Detakai - Data Lakehouse - Um Novo Nível de Gestão de Dados.',
   ignoreTitleTemplate: true,
 };
 ---
-<div class="flex items-center justify-center w-full h-screen" style="background-image: url('https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_682265785_4.2e16d0ba.fill-1600x775.jpg'); background-size: cover; background-position: center;">
+
+<div
+  class="flex items-center justify-center w-full h-screen"
+  style="background-image: url('https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_682265785_4.2e16d0ba.fill-1600x775.jpg'); background-size: cover; background-position: center;"
+>
   <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-  
+    <!-- Hero Widget ******************* -->
+
     <Hero
       actions={[
         {
@@ -31,21 +32,15 @@ const metadata = {
         { text: 'Descubra como', href: '#features' },
       ]}
     >
-    
-    <!-- image -->
-    <Fragment slot="title" >
+      <!-- image -->
+      <Fragment slot="title">
         <div class="mg-5 flex items-center justify-center pt-1">
           <span>データ海</span>
-          </div>
+        </div>
       </Fragment>
-      <Fragment slot="title">
+      <Fragment slot="title"> Mergulhe no futuro dos grandes volumes de dados com a Detakai. </Fragment>
 
-        Mergulhe no futuro dos grandes volumes de dados com a Detakai.
-        
-      </Fragment>
-    
       <Fragment slot="subtitle">
-        
         <span class="hidden sm:inline">
           Deixe seus dados trabalharem para você, escalando seus negócios e tornando decisões mais seguras e informadas.
           <span class="block mb-1 sm:hidden font-bold text-blue-600">Detakai.</span>
@@ -53,9 +48,7 @@ const metadata = {
         </span>
       </Fragment>
     </Hero>
-  </div>
-
-  
+  </Layout>
 
   <!-- Features Widget *************** -->
 
@@ -67,166 +60,156 @@ const metadata = {
     items={[
       {
         title: 'Deltalake',
-        description:
-          'Otimize a gestão de dados transacionais e garanta consistência.',
+        description: 'Otimize a gestão de dados transacionais e garanta consistência.',
         icon: 'tabler:brand-databricks',
       },
       {
         title: 'Unity Catalog',
-        description:
-          ' Controle o acesso e a governança de dados em um só lugar.',
+        description: ' Controle o acesso e a governança de dados em um só lugar.',
         icon: 'tabler:category-2',
       },
       {
         title: 'DataLineage',
-        description:
-          'Acompanhe o ciclo de vida completo dos seus dados, da origem ao destino.',
+        description: 'Acompanhe o ciclo de vida completo dos seus dados, da origem ao destino.',
         icon: 'tabler:list-check',
       },
       {
         title: 'Workflows',
-        description:
-          'Automatize e otimize a precisão na movimentação e transformação de dados..',
+        description: 'Automatize e otimize a precisão na movimentação e transformação de dados..',
         icon: 'tabler:rocket',
       },
       {
         title: 'Machine Learning',
-        description:
-          'Potencialize  seu négocio com modelos de AI para realizar predições e classificações.',
+        description: 'Potencialize  seu négocio com modelos de AI para realizar predições e classificações.',
         icon: 'tabler:brand-github-copilot',
       },
       {
         title: 'LLMs (Large Language Models)',
-        description:
-          "Utilize o poder dos LLMs para processar e interpretar grandes volumes de dados textuais.",
+        description: 'Utilize o poder dos LLMs para processar e interpretar grandes volumes de dados textuais.',
         icon: 'tabler:cpu',
       },
     ]}
   />
 
-
   <!-- Features2 Widget ************** -->
 
   <Features2
-  title="Data Lakehouse"
-  subtitle="O Data Lakehouse é uma solução moderna que une o melhor dos Data Lakes e Data Warehouses, oferecendo escalabilidade e flexibilidade na gestão de dados, aliada à governança e estrutura necessárias para garantir a qualidade das informações. Ideal para empresas que querem transformar grandes volumes de dados em insights valiosos, essa abordagem é essencial para quem deseja estar na vanguarda da análise de dados."
-  tagline="Um Novo Nível de Gestão de Dados"
+    title="Data Lakehouse"
+    subtitle="O Data Lakehouse é uma solução moderna que une o melhor dos Data Lakes e Data Warehouses, oferecendo escalabilidade e flexibilidade na gestão de dados, aliada à governança e estrutura necessárias para garantir a qualidade das informações. Ideal para empresas que querem transformar grandes volumes de dados em insights valiosos, essa abordagem é essencial para quem deseja estar na vanguarda da análise de dados."
+    tagline="Um Novo Nível de Gestão de Dados"
+    items={[
+      {
+        title: 'Integração Completa',
+        description:
+          'Conecte todas as suas fontes de dados em um único ambiente robusto e seguro, facilitando o fluxo e a integração de informações para gerar valor em todos os níveis da sua empresa.',
+        icon: 'tabler:arrow-iteration',
+      },
+      {
+        title: 'Governança de Dados',
+        description:
+          'Tenha controle total sobre quem acessa e modifica seus dados, assegurando conformidade com regulamentações e mantendo a integridade das suas informações em toda a cadeia.',
+        icon: 'tabler:gavel',
+      },
+      {
+        title: 'Machine Learning e LLMs',
+        description:
+          'Automatize processos de AI com MLflow, faça previsões e análise de textos utilizando algorimos de Machine Learning e LLMs para otimizar operações e antecipar tendências.',
+        icon: 'tabler:brand-github-copilot',
+      },
+      {
+        title: 'Deltalake',
+        description:
+          'Garanta consistência, confiabilidade e performance na manipulação de grandes volumes de dados com o Deltalake, uma tecnologia de ponta que une a simplicidade dos Data Lakes com a integridade transacional dos Data Warehouses.',
+        icon: 'tabler:database-leak',
+      },
+      {
+        title: 'DataLineage',
+        description:
+          'Acompanhe o ciclo de vida completo dos seus dados com o DataLineage, permitindo rastrear a origem e o destino das informações, garantindo precisão e conformidade em todos os níveis de análise.',
+        icon: 'tabler:timeline-event-text',
+      },
+      {
+        title: 'Unity Catalog',
+        description:
+          'Administre permissões, políticas de segurança e governança de dados de forma centralizada com o Unity Catalog. Perfeito para garantir que seus dados estejam sempre seguros e acessíveis apenas a quem deve.',
+        icon: 'tabler:category-plus',
+      },
+      {
+        title: 'Data Marts',
+        description:
+          'Crie Data Marts personalizados e otimizados para gerar insights direcionados para o seu negócio. Combinando dados de diferentes fontes, você terá uma visão completa e detalhada do seu mercado e das suas operações.',
+        icon: 'tabler:chart-bubble',
+      },
+      {
+        title: 'DuckDB',
+        description:
+          'Execute consultas analíticas rápidas e eficientes com o DuckDB, uma solução moderna e leve que permite trabalhar diretamente sobre arquivos de dados sem complicações ou a necessidade de integrações complexas.',
+        icon: 'tabler:server-bolt',
+      },
+      {
+        title: 'Apache Spark',
+        description:
+          'Escalabilidade e performance em análise de dados com o Apache Spark, uma tecnologia poderosa que permite o processamento de grandes volumes de dados de maneira distribuída e eficiente, acelerando suas análises e decisões estratégicas.',
+        icon: 'tabler:cpu-2',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
 
-  items={[
-    {
-      title: 'Integração Completa',
-      description: "Conecte todas as suas fontes de dados em um único ambiente robusto e seguro, facilitando o fluxo e a integração de informações para gerar valor em todos os níveis da sua empresa.",
-      icon: 'tabler:arrow-iteration',
-    },
-    {
-      title: 'Governança de Dados',
-      description:
-      'Tenha controle total sobre quem acessa e modifica seus dados, assegurando conformidade com regulamentações e mantendo a integridade das suas informações em toda a cadeia.',
-      icon: 'tabler:gavel',
-    },
-    {
-      title: 'Machine Learning e LLMs',
-      description: "Automatize processos de AI com MLflow, faça previsões e análise de textos utilizando algorimos de Machine Learning e LLMs para otimizar operações e antecipar tendências.",
-      icon: 'tabler:brand-github-copilot',
-    },
-    {
-      title: 'Deltalake',
-      description: "Garanta consistência, confiabilidade e performance na manipulação de grandes volumes de dados com o Deltalake, uma tecnologia de ponta que une a simplicidade dos Data Lakes com a integridade transacional dos Data Warehouses.",
-      icon: 'tabler:database-leak',
-      
-    },
-    {
-      title: 'DataLineage',
-      description:
-        'Acompanhe o ciclo de vida completo dos seus dados com o DataLineage, permitindo rastrear a origem e o destino das informações, garantindo precisão e conformidade em todos os níveis de análise.',
-      icon: 'tabler:timeline-event-text',
-    },
-    {
-      title: 'Unity Catalog',
-      description:
-      "Administre permissões, políticas de segurança e governança de dados de forma centralizada com o Unity Catalog. Perfeito para garantir que seus dados estejam sempre seguros e acessíveis apenas a quem deve.",
-      icon: 'tabler:category-plus',
-    },
-    {
-      title: 'Data Marts',
-      description:
-        'Crie Data Marts personalizados e otimizados para gerar insights direcionados para o seu negócio. Combinando dados de diferentes fontes, você terá uma visão completa e detalhada do seu mercado e das suas operações.',
-      icon: 'tabler:chart-bubble',
-    },
-    {
-      title: 'DuckDB',
-      description:
-        "Execute consultas analíticas rápidas e eficientes com o DuckDB, uma solução moderna e leve que permite trabalhar diretamente sobre arquivos de dados sem complicações ou a necessidade de integrações complexas.",
-      icon: 'tabler:server-bolt',
-    },
-    {
-      title: 'Apache Spark',
-      description:
-        'Escalabilidade e performance em análise de dados com o Apache Spark, uma tecnologia poderosa que permite o processamento de grandes volumes de dados de maneira distribuída e eficiente, acelerando suas análises e decisões estratégicas.',
-      icon: 'tabler:cpu-2',
-    },
-
-  ]}
->
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</Features2>
-
-
-<Note  />
+  <Note />
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-  title="Perguntas Frequentes"
-  subtitle="Encontre respostas para dúvidas comuns sobre como a Detakai pode ajudar a transformar o gerenciamento de dados da sua empresa, usando tecnologias de ponta e boas práticas de governança."
-  tagline="FAQs"
-  classes={{ container: 'max-w-6xl' }}
-  items={[
-    {
-      title: 'Qual o diferencial da Detakai?',
-      description:
-        "A Detakai é especializada em fornecer soluções completas de dados para empresas que querem maximizar o valor de suas informações. Combinamos tecnologias como Databricks, Deltalake, e MLFlow para garantir uma gestão eficiente, segura e escalável dos seus dados, permitindo que você tome decisões informadas e estratégicas.",
-    },
-    {
-      title: 'O que é um Data Lakehouse e por que eu preciso dele?',
-      description:
-        "O Data Lakehouse combina a flexibilidade dos Data Lakes com a governança e performance dos Data Warehouses, permitindo que sua empresa armazene, gerencie e analise grandes volumes de dados de maneira integrada. Essa solução é ideal para empresas que precisam de agilidade, segurança e insights baseados em dados em tempo real.",
-    },
-    {
-      title: 'Como a Detakai pode melhorar meu processo de tomada de decisão?',
-      description:
-        "Nós estruturamos ambientes de Data Marts personalizados e implementamos ferramentas de Business Intelligence que permitem análises profundas e relatórios precisos. Isso transforma seus dados em informações acionáveis, auxiliando na definição de estratégias de negócio mais assertivas.",
-    },
-    {
-      title: 'Como modelos de Machine Learning (ML) e LLMS podem ser aplicados no meu negócio?',
-      description:
-        "ML e LLMs podem ser aplicados em diversas áreas do seu negócio, como previsão de demanda, análise de sentimentos, personalização de produtos e serviços, detecção de fraudes, entre outros. Algoritmos clássicos e técnicas mais recentes como RAG e prompt engineering podem ser integrados aos seus dados e processos.",
-
-    },
-    {
-      title: 'Quais benefícios o MLFlow traz para minha empresa?',
-      description:
-        "O MLFlow facilita a criação, monitoramento e implantação de modelos de Machine Learning. Ele permite automatizar processos complexos, otimizar a performance dos algoritmos e garantir a qualidade dos resultados, acelerando a inovação e a eficiência dos seus projetos de AI.",
-    },
-    {
-      title: 'Como a Detakai garante a segurança dos meus dados?',
-      description:
-        "Com o Unity Catalog e outras soluções avançadas de governança de dados, nós garantimos que todos os acessos aos dados sejam controlados, rastreados e seguros. Implementamos políticas de segurança rigorosas para proteger suas informações e garantir conformidade com regulamentações de mercado.",
-    },
-    {
-      title: 'Minha empresa já tem um Data Warehouse. Por que migrar para um Data Lakehouse?',
-      description:
-        "O Data Lakehouse oferece mais flexibilidade ao integrar dados estruturados e não estruturados, com um custo-benefício superior e performance aprimorada. Além disso, proporciona mais eficiência ao eliminar a necessidade de ambientes de armazenamento separados, consolidando tudo em uma única plataforma otimizada.",
-    },
-    {
-      title: 'Quanto tempo leva para implementar as soluções da Detakai?',
-      description:
-        "O tempo de implementação varia conforme o tamanho e as necessidades específicas da sua empresa. Nossa equipe trabalha com eficiência para garantir uma transição tranquila e rápida, sem comprometer a qualidade ou a segurança do processo.",
-    },
-  
-  ]}
-/>
+    title="Perguntas Frequentes"
+    subtitle="Encontre respostas para dúvidas comuns sobre como a Detakai pode ajudar a transformar o gerenciamento de dados da sua empresa, usando tecnologias de ponta e boas práticas de governança."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Qual o diferencial da Detakai?',
+        description:
+          'A Detakai é especializada em fornecer soluções completas de dados para empresas que querem maximizar o valor de suas informações. Combinamos tecnologias como Databricks, Deltalake, e MLFlow para garantir uma gestão eficiente, segura e escalável dos seus dados, permitindo que você tome decisões informadas e estratégicas.',
+      },
+      {
+        title: 'O que é um Data Lakehouse e por que eu preciso dele?',
+        description:
+          'O Data Lakehouse combina a flexibilidade dos Data Lakes com a governança e performance dos Data Warehouses, permitindo que sua empresa armazene, gerencie e analise grandes volumes de dados de maneira integrada. Essa solução é ideal para empresas que precisam de agilidade, segurança e insights baseados em dados em tempo real.',
+      },
+      {
+        title: 'Como a Detakai pode melhorar meu processo de tomada de decisão?',
+        description:
+          'Nós estruturamos ambientes de Data Marts personalizados e implementamos ferramentas de Business Intelligence que permitem análises profundas e relatórios precisos. Isso transforma seus dados em informações acionáveis, auxiliando na definição de estratégias de negócio mais assertivas.',
+      },
+      {
+        title: 'Como modelos de Machine Learning (ML) e LLMS podem ser aplicados no meu negócio?',
+        description:
+          'ML e LLMs podem ser aplicados em diversas áreas do seu negócio, como previsão de demanda, análise de sentimentos, personalização de produtos e serviços, detecção de fraudes, entre outros. Algoritmos clássicos e técnicas mais recentes como RAG e prompt engineering podem ser integrados aos seus dados e processos.',
+      },
+      {
+        title: 'Quais benefícios o MLFlow traz para minha empresa?',
+        description:
+          'O MLFlow facilita a criação, monitoramento e implantação de modelos de Machine Learning. Ele permite automatizar processos complexos, otimizar a performance dos algoritmos e garantir a qualidade dos resultados, acelerando a inovação e a eficiência dos seus projetos de AI.',
+      },
+      {
+        title: 'Como a Detakai garante a segurança dos meus dados?',
+        description:
+          'Com o Unity Catalog e outras soluções avançadas de governança de dados, nós garantimos que todos os acessos aos dados sejam controlados, rastreados e seguros. Implementamos políticas de segurança rigorosas para proteger suas informações e garantir conformidade com regulamentações de mercado.',
+      },
+      {
+        title: 'Minha empresa já tem um Data Warehouse. Por que migrar para um Data Lakehouse?',
+        description:
+          'O Data Lakehouse oferece mais flexibilidade ao integrar dados estruturados e não estruturados, com um custo-benefício superior e performance aprimorada. Além disso, proporciona mais eficiência ao eliminar a necessidade de ambientes de armazenamento separados, consolidando tudo em uma única plataforma otimizada.',
+      },
+      {
+        title: 'Quanto tempo leva para implementar as soluções da Detakai?',
+        description:
+          'O tempo de implementação varia conforme o tamanho e as necessidades específicas da sua empresa. Nossa equipe trabalha com eficiência para garantir uma transição tranquila e rápida, sem comprometer a qualidade ou a segurança do processo.',
+      },
+    ]}
+  />
 
   <CallToAction
     actions={[
@@ -244,7 +227,9 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      A Detakai não é apenas uma consultoria de dados – somos parceiros estratégicos na transformação digital da sua empresa. Combinamos conhecimento técnico, inovação e um profundo entendimento de negócios para entregar resultados concretos que transformam dados em decisões valiosas.
+      A Detakai não é apenas uma consultoria de dados – somos parceiros estratégicos na transformação digital da sua
+      empresa. Combinamos conhecimento técnico, inovação e um profundo entendimento de negócios para entregar resultados
+      concretos que transformam dados em decisões valiosas.
     </Fragment>
   </CallToAction>
-</Layout>
+</div>
