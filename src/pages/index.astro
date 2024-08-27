@@ -1,18 +1,12 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import myImage from '~/assets/images/deep.jpg';
-import Image from 'astro/components/Image.astro';
+
 
 
 
@@ -39,17 +33,13 @@ const metadata = {
     >
     
     <!-- image -->
-     <Fragment slot="title" >
+    <Fragment slot="title" >
         <div class="mg-5 flex items-center justify-center pt-1">
           <span>データ海</span>
           </div>
       </Fragment>
       <Fragment slot="title">
-       <!--  <div class="flex items-center justify-center ">
-          <Image  class="flex items-center justify-center " width="320"
-            src={myImage} alt="A description of my image." />
-         </div> -->
-         
+
         Mergulhe no futuro dos grandes volumes de dados com a Detakai.
         
       </Fragment>
@@ -114,9 +104,6 @@ const metadata = {
     ]}
   />
 
-<!-- Note Widget ******************* -->
-
-
 
   <!-- Features2 Widget ************** -->
 
@@ -163,7 +150,7 @@ const metadata = {
     {
       title: 'Data Marts',
       description:
-        'Crie Data Marts personalizados e otimizados para gerar insights direcionados para o seu negócio. Ferramentas poderosas para a criação de relatórios e análises que impulsionam decisões estratégicas.',
+        'Crie Data Marts personalizados e otimizados para gerar insights direcionados para o seu negócio. Combinando dados de diferentes fontes, você terá uma visão completa e detalhada do seu mercado e das suas operações.',
       icon: 'tabler:chart-bubble',
     },
     {
@@ -214,7 +201,7 @@ const metadata = {
     {
       title: 'Como modelos de Machine Learning (ML) e LLMS podem ser aplicados no meu negócio?',
       description:
-        "ML e LLMs podem ser aplicados em diversas áreas do seu negócio, como previsão de demanda, análise de sentimentos, personalização de produtos e serviços, detecção de fraudes, entre outros. Com inteligencia artificial podemos antecipar tendências e melhorar a experiência do cliente.",
+        "ML e LLMs podem ser aplicados em diversas áreas do seu negócio, como previsão de demanda, análise de sentimentos, personalização de produtos e serviços, detecção de fraudes, entre outros. Algoritmos clássicos e técnicas mais recentes como RAG e prompt engineering podem ser integrados aos seus dados e processos.",
 
     },
     {
@@ -241,20 +228,6 @@ const metadata = {
   ]}
 />
 
-
-  <!-- Stats Widget ****************** -->
-
-<!--   <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  />
- -->
-  <!-- CallToAction Widget *********** -->
-
   <CallToAction
     actions={[
       {
@@ -267,7 +240,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-     <span>Por que escolher a Detakai?</span>
+      <span>Por que escolher a Detakai?</span>
     </Fragment>
 
     <Fragment slot="subtitle">
