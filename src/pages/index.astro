@@ -13,11 +13,10 @@ const metadata = {
 };
 ---
 
+<Layout metadata={metadata}>
 <div
   class="flex items-center justify-center w-full h-screen"
-  style="background-image: url('https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_682265785_4.2e16d0ba.fill-1600x775.jpg'); background-size: cover; background-position: center;"
->
-  <Layout metadata={metadata}>
+  style="background-image: url('https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_682265785_4.2e16d0ba.fill-1600x775.jpg'); background-size: cover; background-position: center;">
     <!-- Hero Widget ******************* -->
 
     <Hero
@@ -48,7 +47,8 @@ const metadata = {
         </span>
       </Fragment>
     </Hero>
-  </Layout>
+  </div>
+</Layout>
 
   <!-- Features Widget *************** -->
 
@@ -232,4 +232,4 @@ const metadata = {
       concretos que transformam dados em decisões valiosas.
     </Fragment>
   </CallToAction>
-</div>
+
