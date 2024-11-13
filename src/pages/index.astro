@@ -6,6 +6,7 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Button from '~/components/ui/Button.astro';
 
 const metadata = {
   title: 'Detakai - Data Lakehouse - Um Novo Nível de Gestão de Dados.',
@@ -52,11 +53,12 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
+  
   <Features
     id="features"
-    tagline="Vamos automatizar, Catalogar, organizar!"
+    tagline="Vamos catalogar, automatizar e dar sentido ao seu Big Data"
     title="Transforme dados em decisões inteligentes"
-    subtitle="O volume de dados gerados pelas empresas é maior do que nunca, e extrair valor dessas informações pode ser a chave para o sucesso. Mas como estruturar e gerenciar esses dados de forma eficiente e estratégica? A Detakai sabe como!"
+    subtitle="O volume de dados gerados pelas empresas é maior do que nunca, e extrair valor dessas informações pode ser a chave para o sucesso. Mas como estruturar e gerenciar esses dados de forma eficiente e estratégica? A Detakai sabe como."
     items={[
       {
         title: 'Deltalake',
@@ -89,15 +91,29 @@ const metadata = {
         icon: 'tabler:cpu',
       },
     ]}
+
   />
+
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Data Lakehouse"
-    subtitle="O Data Lakehouse é uma solução moderna que une o melhor dos Data Lakes e Data Warehouses, oferecendo escalabilidade e flexibilidade na gestão de dados, aliada à governança e estrutura necessárias para garantir a qualidade das informações. Ideal para empresas que querem transformar grandes volumes de dados em insights valiosos, essa abordagem é essencial para quem deseja estar na vanguarda da análise de dados."
-    tagline="Um Novo Nível de Gestão de Dados"
+    title="DATABRICKS"
+    subtitle="Somos uma força tarefa na implementação e gestão de soluções de dados com a plataforma Databricks. Combinamos tecnologia de ponta com boas práticas de governança para garantir que seus dados estejam integrados ao seu negócio. "
+    tagline="plataforma Data Lakehouse"
     items={[
+      {
+        title: 'Data Lakehouse',
+        description:
+          'O Data Lakehouse é uma solução moderna que une o melhor dos Data Lakes e Data Warehouses, oferecendo escalabilidade e flexibilidade na gestão de dados, aliada à governança e estrutura necessárias para garantir a qualidade das informações.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Governança de Dados',
+        description:
+          'Tenha controle total sobre quem acessa e modifica seus dados, assegurando conformidade com regulamentações e mantendo a integridade das suas informações em toda a cadeia.',
+        icon: 'tabler:gavel',
+      },     
       {
         title: 'Integração Completa',
         description:
@@ -105,54 +121,24 @@ const metadata = {
         icon: 'tabler:arrow-iteration',
       },
       {
-        title: 'Governança de Dados',
+        title: 'Cloud providers',
         description:
-          'Tenha controle total sobre quem acessa e modifica seus dados, assegurando conformidade com regulamentações e mantendo a integridade das suas informações em toda a cadeia.',
-        icon: 'tabler:gavel',
-      },
-      {
-        title: 'Machine Learning e LLMs',
-        description:
-          'Automatize processos de AI com MLflow, faça previsões e análise de textos utilizando algorimos de Machine Learning e LLMs para otimizar operações e antecipar tendências.',
-        icon: 'tabler:brand-github-copilot',
-      },
-      {
-        title: 'Deltalake',
-        description:
-          'Garanta consistência, confiabilidade e performance na manipulação de grandes volumes de dados com o Deltalake, uma tecnologia de ponta que une a simplicidade dos Data Lakes com a integridade transacional dos Data Warehouses.',
-        icon: 'tabler:database-leak',
-      },
-      {
-        title: 'DataLineage',
-        description:
-          'Acompanhe o ciclo de vida completo dos seus dados com o DataLineage, permitindo rastrear a origem e o destino das informações, garantindo precisão e conformidade em todos os níveis de análise.',
-        icon: 'tabler:timeline-event-text',
-      },
-      {
-        title: 'Unity Catalog',
-        description:
-          'Administre permissões, políticas de segurança e governança de dados de forma centralizada com o Unity Catalog. Perfeito para garantir que seus dados estejam sempre seguros e acessíveis apenas a quem deve.',
-        icon: 'tabler:category-plus',
+          'Trabalhamos com os principais provedores de nuvem para garantir que sua infraestrutura de dados seja escalável, segura e eficiente. ',
+        icon: 'tabler:cloud-rain',
       },
       {
         title: 'Data Marts',
         description:
-          'Crie Data Marts personalizados e otimizados para gerar insights direcionados para o seu negócio. Combinando dados de diferentes fontes, você terá uma visão completa e detalhada do seu mercado e das suas operações.',
+          'Silos de dados personalizados para atender às necessidades específicas de cada área da sua empresa, permitindo análises mais detalhadas e insights mais precisos.',
         icon: 'tabler:chart-bubble',
       },
       {
-        title: 'DuckDB',
+        title: 'Business Intelligence',
         description:
-          'Execute consultas analíticas rápidas e eficientes com o DuckDB, uma solução moderna e leve que permite trabalhar diretamente sobre arquivos de dados sem complicações ou a necessidade de integrações complexas.',
-        icon: 'tabler:server-bolt',
-      },
-      {
-        title: 'Apache Spark',
-        description:
-          'Escalabilidade e performance em análise de dados com o Apache Spark, uma tecnologia poderosa que permite o processamento de grandes volumes de dados de maneira distribuída e eficiente, acelerando suas análises e decisões estratégicas.',
-        icon: 'tabler:cpu-2',
-      },
-    ]}
+          'Integre seus dados refinados na camada de BI para gerar relatórios e dashboards interativos que ajudam a monitorar KPIs, identificar tendências e tomar decisões estratégicas.',
+        icon: 'tabler:chart-bar',
+      }
+      ]}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -171,7 +157,7 @@ const metadata = {
       {
         title: 'Qual o diferencial da Detakai?',
         description:
-          'A Detakai é especializada em fornecer soluções completas de dados para empresas que querem maximizar o valor de suas informações. Combinamos tecnologias como Databricks, Deltalake, e MLFlow para garantir uma gestão eficiente, segura e escalável dos seus dados, permitindo que você tome decisões informadas e estratégicas.',
+          'A Detakai é especializada em fornecer soluções completas de dados para empresas que querem maximizar o valor de suas informações. Acreditamos que a plataforma Databricks é a melhor opção para empresas que buscam escalabilidade, flexibilidade e segurança na gestão de dados.',
       },
       {
         title: 'O que é um Data Lakehouse e por que eu preciso dele?',
@@ -196,7 +182,7 @@ const metadata = {
       {
         title: 'Como a Detakai garante a segurança dos meus dados?',
         description:
-          'Com o Unity Catalog e outras soluções avançadas de governança de dados, nós garantimos que todos os acessos aos dados sejam controlados, rastreados e seguros. Implementamos políticas de segurança rigorosas para proteger suas informações e garantir conformidade com regulamentações de mercado.',
+          'Com o Unity Catalog nós garantimos que todos os acessos aos dados sejam controlados, rastreados e seguros. Implementamos políticas de segurança rigorosas para proteger suas informações e garantir conformidade com regulamentações de mercado.',
       },
       {
         title: 'Minha empresa já tem um Data Warehouse. Por que migrar para um Data Lakehouse?',
